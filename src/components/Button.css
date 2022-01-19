@@ -33,6 +33,7 @@
     font-size: 20px;
 }
 
+
 .btn-medium:hover .btn-large:hover {
     background: var(--primary);
     color: #242424;
@@ -44,3 +45,10 @@
       color: #242424;
       transition: 250ms;
 }
+/* .btn-primary:hover {
+    background-color: transparent;
+    color: #fff;
+    border: 1px solid #fff;
+    transition: 250ms;
+} */
+
