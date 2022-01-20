@@ -41,12 +41,13 @@
     list-style: none;
     text-align: center;
     width: 60vw;
-    justify-content: end;
-    margin-right: 2rem;
-  }
+    justify-content: center;
+    
+
+   } 
   
   .nav-item {
-    height: 80px;
+    height: 50px;
   }
   
   .nav-links {
@@ -75,6 +76,7 @@
     display: none;
   }
   
+  
   @media screen and (max-width: 960px) {
     .NavbarItems {
       position: relative;
@@ -87,7 +89,7 @@
       height: 90vh;
       position: absolute;
       top: 80px;
-      left: -100%;
+      left: -150%;
       opacity: 1;
       transition: all 0.5s ease;
     }
@@ -98,11 +100,12 @@
       opacity: 1;
       transition: all 0.5s ease;
       z-index: 1;
+      
     }
   
     .nav-links {
       text-align: center;
-      padding: 2rem;
+      padding: 5px;
       width: 100%;
       display: table;
     }

@@ -20,7 +20,7 @@ const Navbar = () => {
     }
     // to display button according to screen size
     const displayButton = () => {
-        if (window.innerWidth <= 900){
+        if (window.innerWidth <= 960){
             return setButton(false)
         }else{
             return setButton(true)
@@ -53,7 +53,7 @@ const Navbar = () => {
                             <Link to={'/signup'} className='nav-links-mobile' onClick={closeMobileMenu}>Sign Up</Link>
                         </li>
                     </ul>
-                    {button && <Button buttonStyle={'btn-outline'} buttonSize={'btn-primary'} >SIGN UP</Button>}
+                    {button && <Button buttonStyle={'btn-outline'} buttonSize={'btn-medium'} >SIGN UP</Button>}
                 </div>
 
             </nav>
