@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-no-comment-textnodes */
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom';
 import { FaTimes, FaTypo3, FaBars } from 'react-icons/fa';
@@ -39,6 +40,8 @@ const Navbar = () => {
                     <div className='menu-icon' onClick={handleClick}>
                         {click ? <FaTimes className='fas fa-times'/> : <FaBars className='fas fa-times'/> }
                     </div>
+                    //for this ul, the handle click function already sets the click state to the opposite of its original state so that will determine how the tenary statement will start reading
+
                     <ul className={click ? 'nav-menu active' :'nav-menu'}>
                         <li className='nav-item'>
                             <Link to={'/'} className='nav-links' onClick={closeMobileMenu}>Home</Link>
@@ -50,10 +53,13 @@ const Navbar = () => {
                             <Link to={'/products'} className='nav-links' onClick={closeMobileMenu}>Products</Link>
                         </li>
                         <li className='nav-item'>
-                            <Link to={'/signup'} className='nav-links-mobile' onClick={closeMobileMenu}>Sign Up</Link>
+                            <Link to={'/sign-up'} className='nav-links-mobile' onClick={closeMobileMenu}>Sign Up</Link>
                         </li>
                     </ul>
-                    {button && <Button buttonStyle={'btn-outline'} buttonSize={'btn-medium'} >SIGN UP</Button>}
+                    <Link to={'/sign-up'}>
+                        {button && <Button  buttonSize={'btn-medium'} buttonStyle={'btn-outline'}>SIGN UP</Button>}
+                        </Link>
+                        
                 </div>
 
             </nav>
